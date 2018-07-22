@@ -13,6 +13,9 @@ PImage image;
 PImage Bird; 
 float birdVelocity = 0;
 float gravity = 0.5;
+int cat= 450;
+int dog= 50;
+ int size= 66;
 void setup() {
 
   size(640, 980);
@@ -21,9 +24,10 @@ void setup() {
   Bird = loadImage("FlappyBird.png");
 }
 void draw() {
+  
   image(image, ax, ay);
   image(image, bx, ay);
-  image(Bird, x-50, y-50, 70, 60);
+  image(Bird, x-30, y-32, 70, 60);
 
   if (bx==0) {
     ax=1278;
@@ -33,10 +37,10 @@ void draw() {
   }
   ax = ax-2;
   bx = bx -2;
-  fill(7, 69, 420, 0.5);
+  fill(7, 69, 255, 0.5);
   stroke(70, 69, 420, 0.5);
-  ellipse(x, y, 66, 66);
-
+  ellipse(x, y, size, size);
+  
   fill(#3CDE5B);
   strokeWeight(3);
   stroke(#1F4326);
@@ -52,10 +56,13 @@ void draw() {
   px = px - 2;
   if (px < 0 - pw) {
     px = 635;
+    int rand= (int)random(dog, cat);
+    ph = rand;
     
   }
 }
 
 void mousePressed() {
   birdVelocity =  -10;
-};
+}
+boolean isColliding(int x, float y, int size, int px, int py, int ph, int pw) 
