@@ -15,6 +15,12 @@ float birdVelocity = 0;
 float gravity = 0.5;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+int cat= 450;
+int dog= 50;
+ int size= 66;
+>>>>>>> parent of aaad2b1... Finished flappy bird
 =======
 int cat= 450;
 int dog= 50;
@@ -35,10 +41,13 @@ void setup() {
 void draw() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   image(image, ax, ay);
   image(image, bx, ay);
   image(Bird, x-50, y-50, 70, 60);
 =======
+=======
+>>>>>>> parent of aaad2b1... Finished flappy bird
 =======
 >>>>>>> parent of aaad2b1... Finished flappy bird
   
@@ -46,6 +55,9 @@ void draw() {
   image(image, bx, ay);
   image(Bird, x-30, y-32, 70, 60);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of aaad2b1... Finished flappy bird
+=======
 >>>>>>> parent of aaad2b1... Finished flappy bird
 =======
 >>>>>>> parent of aaad2b1... Finished flappy bird
@@ -60,6 +72,7 @@ void draw() {
   bx = bx -2;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   fill(7, 69, 420, 0.5);
   stroke(70, 69, 420, 0.5);
   ellipse(x, y, 66, 66);
@@ -67,11 +80,16 @@ void draw() {
 =======
 =======
 >>>>>>> parent of aaad2b1... Finished flappy bird
+=======
+>>>>>>> parent of aaad2b1... Finished flappy bird
   fill(7, 69, 255, 0.5);
   stroke(70, 69, 420, 0.5);
   ellipse(x, y, size, size);
   
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of aaad2b1... Finished flappy bird
+=======
 >>>>>>> parent of aaad2b1... Finished flappy bird
 =======
 >>>>>>> parent of aaad2b1... Finished flappy bird
@@ -92,6 +110,11 @@ void draw() {
     px = 635;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    int rand= (int)random(dog, cat);
+    ph = rand;
+>>>>>>> parent of aaad2b1... Finished flappy bird
 =======
     int rand= (int)random(dog, cat);
     ph = rand;
@@ -108,7 +131,12 @@ void mousePressed() {
   birdVelocity =  -10;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
+=======
+}
+boolean isColliding(int x, float y, int size, int px, int py, int ph, int pw) 
+>>>>>>> parent of aaad2b1... Finished flappy bird
 =======
 }
 boolean isColliding(int x, float y, int size, int px, int py, int ph, int pw) 
